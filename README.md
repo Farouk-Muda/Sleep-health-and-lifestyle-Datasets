@@ -35,8 +35,15 @@ PROC IMPORT DATAFILE='/home/u63989960/sasuser.v94/Health/Sleep.csv'
 RUN;
 proc print data=health.sleep_health; run;
 ```   
+[Datasets PDF](https://github.com/Farouk-Muda/Sleep-health-and-lifestyle-Datasets/blob/main/RESULTS/datasets.pdf)
 
-[Download the datasets PDF](https://github.com/Farouk-Muda/Sleep-health-and-lifestyle-Datasets/blob/main/RESULTS/datasets.pdf)
+
+```/* List variable names to verify the correct names in the dataset */
+PROC CONTENTS DATA=health.sleep_health;
+RUN;
+```  
+[Contents PDF](https://github.com/Farouk-Muda/Sleep-health-and-lifestyle-Datasets/blob/main/RESULTS/Contents.pdf)
+
 
 
    
