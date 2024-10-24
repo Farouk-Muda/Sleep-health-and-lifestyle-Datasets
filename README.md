@@ -36,7 +36,8 @@ PROC IMPORT DATAFILE='/home/u63989960/sasuser.v94/Health/Sleep.csv'
 RUN;
 proc print data=health.sleep_health; run;
 ```
-The dataset was cleaned with Excel and imported into the SAS environment using the code above.You can view the entire dataset in SAS using the link below.  
+The dataset was cleaned with Excel and imported into the SAS environment using the code above.You can view the entire dataset in SAS using the link below. 
+![SAS_dataset.png](https://github.com/Farouk-Muda/Sleep-health-and-lifestyle-Datasets/blob/main/RESULTS/SAS_dataset.png)
 [Datasets PDF](https://github.com/Farouk-Muda/Sleep-health-and-lifestyle-Datasets/blob/main/RESULTS/datasets.pdf)
 
 
