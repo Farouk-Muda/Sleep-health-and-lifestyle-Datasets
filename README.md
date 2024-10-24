@@ -100,6 +100,13 @@ PROC CORR DATA=health.sleep_health;
     VAR Sleep_Duration Quality_of_Sleep Physical_Activity_Level Stress_Level Heart_Rate Daily_Steps;
 RUN;
 ```
+**Pearson Correlation Coefficients**
+- The strongest correlations are found between sleep duration and quality of sleep (r = 0.88) and between stress levels and both sleep duration (r = -0.81) and quality of sleep (r = -0.90). This indicates that improving sleep duration can significantly enhance sleep quality, while managing stress is crucial for both sleep outcomes.
+- There are moderate correlations between heart rate and sleep duration (r = -0.52), indicating that higher heart rates might negatively impact sleep duration.
+- While physical activity level shows a positive correlation with sleep duration, it is weak (r = 0.21). This suggests that while increased activity may help improve sleep duration, other factors like stress and overall health might play a more significant role.
+- The strong negative correlations between stress and both sleep quality and duration highlight the importance of stress management interventions in promoting better sleep health.
+- Daily steps have a strong positive correlation with physical activity levels but show no significant correlation with sleep duration or quality. This suggests that simply walking more may not directly improve sleep health, although it contributes to overall physical activity.
+
 [Correlation Analysis PDF](https://github.com/Farouk-Muda/Sleep-health-and-lifestyle-Datasets/blob/main/RESULTS/correlation%20analysis.pdf)
 
 ```
@@ -108,7 +115,12 @@ PROC SGPLOT DATA=health.sleep_health;
     VBOX Sleep_Duration / CATEGORY=Occupation;
     TITLE 'Sleep Duration by Occupation';
 RUN;
-```  
+```
+- The variation in sleep duration across occupations might reflect the nature of the job. For example, doctors and scientists show a wider range of sleep durations, possibly reflecting irregular schedules or demanding job requirements.
+- Nurses tend to have a notably shorter median sleep duration, which could be indicative of shift work prevalent in healthcare.
+- Sales Representatives and Scientists exhibit the most variability and outliers, suggesting less consistent sleep patterns possibly due to travel, deadlines, or the need for problem-solving at irregular hours.
+- Managers and Lawyers, with their tightly grouped durations and higher medians, might have more regular schedules but also potentially longer hours that limit their sleep to a narrow but higher range.
+ 
 [Distribution of Sleep duration by Occupation PDF](https://github.com/Farouk-Muda/Sleep-health-and-lifestyle-Datasets/blob/main/RESULTS/Visualise%20sleep%20duration%20by%20occupation.pdf)
 
 ```
@@ -118,6 +130,13 @@ PROC SGPLOT DATA=health.sleep_health;
     TITLE 'Stress Level by BMI Category';
 RUN;
 ```
+- Normal and Normal Weight categories show similar distributions, with medians around 5 and a fairly narrow interquartile range IQR, suggesting a moderate and consistent level of stress among individuals in these groups.
+- Obese category shows a significantly higher median stress level, around 6.5, with a broader IQR extending from about 5 to 7.5. This indicates higher stress levels overall and greater variability in stress among obese individuals.
+- Overweight individuals also exhibit higher stress levels with a median also close to 6.5. However, the spread (IQR) is slightly narrower compared to the obese category but still broader than the normal weight groups.
+
+**The stress level tends to increase as the BMI category moves from normal to overweight and obese. This trend suggests a correlation between higher BMI and increased stress levels**.
+**The similar stress distributions and medians in the Obese and Overweight categories might indicate that the factors contributing to stress are similar across these groups, potentially due to health-related issues, societal pressures, or psychological factors associated with being overweight or obese**. 
+
 [Stress Level by BMI Category PDF](https://github.com/Farouk-Muda/Sleep-health-and-lifestyle-Datasets/blob/main/RESULTS/Stress%20Level%20by%20BMI%20Category.pdf) 
 
 ```
