@@ -135,6 +135,7 @@ RUN;
 - Overweight individuals also exhibit higher stress levels with a median also close to 6.5. However, the spread (IQR) is slightly narrower compared to the obese category but still broader than the normal weight groups.
 
 **The stress level tends to increase as the BMI category moves from normal to overweight and obese. This trend suggests a correlation between higher BMI and increased stress levels**.
+
 **The similar stress distributions and medians in the Obese and Overweight categories might indicate that the factors contributing to stress are similar across these groups, potentially due to health-related issues, societal pressures, or psychological factors associated with being overweight or obese**. 
 
 [Stress Level by BMI Category PDF](https://github.com/Farouk-Muda/Sleep-health-and-lifestyle-Datasets/blob/main/RESULTS/Stress%20Level%20by%20BMI%20Category.pdf) 
@@ -167,3 +168,10 @@ PROC GLM DATA=health.sleep_health;
 RUN;
 ```
 [Contents PDF](https://github.com/Farouk-Muda/Sleep-health-and-lifestyle-Datasets/blob/main/RESULTS/predicting%20sleep%20duration.pdf) 
+
+### Recommendations
+-  Offer specialized sleep hygiene programs for healthcare professionals, especially those in high-stress roles like doctors and nurses, to help manage the irregular schedules and demanding job requirements that negatively impact sleep.
+-  Develop and implement stress reduction programs tailored to individuals with higher BMI, as stress levels are significantly correlated with increased BMI. These could include mindfulness, counseling, and other therapeutic strategies.
+-  Regular Health Screenings: Emphasize the importance of regular screenings for blood pressure and heart rate, especially for individuals in the higher range, to prevent potential cardiovascular issues.
+-  Establish comprehensive wellness programs that include stress management, opportunities for physical activity during work hours, and resources for mental health support.
+-  Consider more flexible work arrangements to accommodate the need for adequate sleep, especially for shift workers like nurses and those with demanding travel schedules like sales representatives.
